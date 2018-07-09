@@ -4,8 +4,122 @@
 }
 .pl-6{
 padding-left: 19%;
+opacity: 0.6;
 }
 
 .pl-7{
     padding-left: 13%;
 }
+.font-size{
+    font-size: 13px;
+}
+.social-image-size{
+    height:23px;
+    width: 23px;
+}
+.asdf{
+    
+    flex-grow: 0.5;
+    margin-left: 0 auto;
+    
+}
+.more{
+    overflow: hidden;
+    clear: left;
+}
+.data{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 2px;
+    flex-grow: 5
+}
+.anchor1:hover{
+    
+    text-decoration-line: none;
+}
+
+.other-details{background-color:whitesmoke;
+    overflow: hidden;    
+    border-bottom: 2px solid #f9f9f9;
+}
+.search-box{
+    position: absolute;
+    left: 410px;
+    top: 180px;
+}
+.search input {
+    position: absolute;
+    width: 0px;
+    float: Left;
+    margin-left: 500px;
+    
+    transition: all 0.7s ease-in-out; 
+    height: 50px;
+    line-height: 18px;
+    padding: 0 2px 0 2px;
+    border-radius:1px;
+}
+.search:hover input, .search input:focus {
+    width: 500px;
+    margin-left: -50px;
+}
+.btn-primary{
+    position: absolute;
+    left: 355px;
+height: 50px;
+width:200px;
+}
+.search {
+    width: 400px;
+    height: 30px;    
+    line-height: 22px;
+}
+
+.asdf:hover{
+    background-color: beige;
+}
+.page-link{
+    background-color:#63d13e
+}
+.border-0:hover{
+    text-decoration: underline;
+}
+.page-numbers{
+    display: flex;    
+}
+.search-form .form-group {
+    float: right !important;
+    transition: all 1s, border-radius 0s;
+    width: 20px;
+    height: 10px;
+    background-color: blue;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    border-radius: 25px;
+    border: 1px solid white;
+  }
+  .search-form .form-group input.form-control {
+    /* padding-right: 20px; */
+    border: 0 none;
+    background: transparent;
+    box-shadow: none;
+    display:block;
+
+  }
+  .form-control::input-placeholder {
+    display: none;
+  }
+
+
+  .form-control-feedback {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    z-index: 10;
+    display: block;
+    width: 34px;
+    height: 30px;
+    line-height: 10px;
+    color: #3596e0;
+  }
+  
