@@ -85,7 +85,49 @@ h1{
     color: #ffc107;
 }
 
+.search-form input.hover-input-search::-ms-input-placeholder {
+    display: none;
+  }
+  .hover-input-search{
+position: relative;
+width: 35px;
+left:442px;
+height:35px;
+border-radius:50%;
+margin: 5px;
+}
+ .form-control-feedback:hover~.hover-input-search,.hover-input-search:hover{
+transition: all 1s,border-radius 0s;
+width: 474px;
+left: 0px;
 
+border-radius: 25px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+border: 1px solid white;
+}
+.pl-6{
+    padding-left: 19%;
+    opacity: 0.6;
+    }
+    
+ .form-control-feedback {
+    position: absolute;
+    top:2px;
+    left: 445px;
+    z-index: 10;
+
+    width: 34px;
+    height: 30px;
+    line-height: 10px;
+    color: #3596e0;
+  } 
+  .dropdown-item:hover{
+    
+    background-color:#343434;
+    
+    
+}
 
 
 

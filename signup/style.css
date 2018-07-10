@@ -133,3 +133,46 @@ button.social{
 .google{
     background:#dd4b39;
 }
+.search-form input.hover-input-search::-ms-input-placeholder {
+    display: none;
+  }
+  .hover-input-search{
+position: relative;
+width: 5px;
+left:270px;
+height:50px;
+border-radius:5px;
+margin:1px;
+}
+ .form-control-feedback:hover~.hover-input-search,.hover-input-search:hover{
+transition: all 1s,border-radius 0s;
+width: 494px;
+left: 0px;
+
+border-radius: 25px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+border: 1px solid white;
+}
+.pl-6{
+    padding-left: 19%;
+    opacity: 0.6;
+    }
+    
+ .form-control-feedback {
+    position: absolute;
+    top:2px;
+    left: 455px;
+    z-index: 10;
+
+    width: 34px;
+    height: 30px;
+    line-height: 10px;
+    color: #3596e0;
+  } 
+  .dropdown-item:hover{
+    
+    background-color:#343434;
+    
+    
+}
