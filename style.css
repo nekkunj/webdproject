@@ -92,7 +92,7 @@ width:200px;
 .page-numbers{
     display: flex;    
 }
-.search-form input.hover-input-search::-ms-input-placeholder {
+.search-form input.hover-input-search::input-placeholder {
     display: none;
   }
   .hover-input-search{
