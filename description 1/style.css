@@ -43,8 +43,9 @@ border: 1px solid white;
  background-color: whitesmoke;
  position: absolute;
  top: 170px;
- left: 267px;   
+ left: 207px;   
 }
+
 .description{
     width:800px;
     background-color: whitesmoke;
@@ -84,7 +85,7 @@ padding:10px;
 #myBtn {
   display: none; 
   position: fixed; /* Fixed/sticky position */
-  bottom: 200px; /* Place the button at the bottom of the page */
+  bottom: 50px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border:1px red;
@@ -100,4 +101,21 @@ padding:10px;
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
+}
+.notification-fixed{
+  height:200px;
+  width:300px;
+  border-top:6px yellowgreen solid;
+  position:sticky;
+  z-index:10;
+  top:100px;
+  left:1000px;
+  background-color: whitesmoke;
+  box-shadow: 5px 5px 5px #343434;
+  font-size:14px;
+
+}
+.notification-fixed .input-email{
+  border-radius:20px;
+ width:200px; 
 }
