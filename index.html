@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
 <body>
     
@@ -21,6 +22,7 @@
         <button class="navbar-toggler bg-dark " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon " ></span>
             </button>
+            
             
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     
@@ -41,7 +43,7 @@
         <input type="text" class="hover-input-search " name="search" id="search" placeholder="search">
           
 </form>
-<div style='display: flex;border-top: solid 1px grey;'>             
+<div class="pt-4" style='display: flex;'>             
     <span class="m-2"><span style="color: gray;">Job Titles</span>
         <a class="dropdown-item text-light" href="#">English Teacher</a>
         <a class="dropdown-item text-light" href="#">Science Teacher</a>
@@ -120,30 +122,53 @@
 
             </div>
           </nav>
-    <div id="demo" class="carousel slide " style="margin-top: 55px;"data-ride="carousel">
+          <button class="btn btn-info"onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div id="demo" class="carousel slide " style="margin-top: 55px;" data-ride="carousel">
 
             <!-- Indicators -->
             <ul class="carousel-indicators">
               <li data-target="#demo" data-slide-to="0" class="active"></li>
               <li data-target="#demo" data-slide-to="1"></li>
               <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3" ></li>
+              <li data-target="#demo" data-slide-to="4"></li>
+              <li data-target="#demo" data-slide-to="5"></li>
             </ul>
-          
-            <!-- The slideshow -->
-            <div class="carousel-inner">
-              <div class="carousel-item active bg-secondary">
-                <img class=" slideshow pl-6" src="http://canarylearning.com/wp-content/uploads/2016/02/Feeling-aloneSmall.jpg" alt="Los Angeles">
-                <span class="container  search-box">
+          <span class="container  search-box">
                         <div class="row">
                             <div class="search">
                     <input type="text" class="form-control input-sm" maxlength="200" placeholder="Search for Jobs" />
                      <button type="submit" class="btn btn-primary btn-sm"><h5>Search</h5></button>
                     </div>
                         </div>
+                        
                     </span>
+                    <div id="recent-searches">
+                            <h5>RECENT SEARCHES</h5>
+                            <ul>
+                            <li class="text-primary">B.Ed</li>
+                            <li class="text-primary">History Teacher</li>
+                            <li class="text-primary">Maths</li>
+                        </ul>
+                        </div>
+                    <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active bg-secondary">
+                <img class=" slideshow pl-6" src="http://canarylearning.com/wp-content/uploads/2016/02/Feeling-aloneSmall.jpg" alt="Los Angeles">
+                
             </div>
               <div class="carousel-item bg-secondary">
                 <img class="slideshow pl-6" src="http://media2.intoday.in/indiatoday/images/stories/2015October/aspire-news-1_102915052918.jpg" alt="Chicago">
+              </div>
+              <div class="carousel-item bg-secondary">
+                <img class="slideshow pl-6" src="https://static.makeuseof.com/wp-content/uploads/2013/05/Stand-out.jpg" alt="Chicago">
+              </div>
+              <div class="carousel-item bg-secondary">
+                <img class="slideshow pl-6" src="https://seopressor.com/wp-content/uploads/2016/10/website-visitors.jpg" alt="Chicago">
+              </div>
+              <div class="carousel-item bg-secondary">
+                <img class="slideshow pl-6" src="http://haxtunchamber.org/wp-content/uploads/2017/09/web-visitor.jpg" alt="Chicago">
               </div>
               <div class="carousel-item bg-secondary ">
                 <img class="slideshow pl-6 " src="http://timesofoman.com/uploads/images/2016/05/09/403051.jpg" alt="New York">
@@ -159,9 +184,14 @@
             </a>
           </div>
           <br>
+          
+
+          
           <!-- card 1 -->
-      <div  class=" data container-fluid  "  >
-          <div  class=" row border  p-0 m-3   asdf" style="width:38rem;">
+      <span style="display: flex;">
+          <div  class=" data  container-fluid  "  style="margin-top: -50px;z-index: 10;">
+                <div class="suggested-results other-details row border asdf ml-3">50 suggesteded Results  </div>
+          <div  class=" row border  m-3 p-0    asdf" style="width:38rem;">
 <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="https://www.naukri.com/job-listings-Walk-in-Interviews-for-PTI-Teacher-in-Alpine-Convent-School-Alpine-Progressive-Educational-Society-AlpineConvent-School-Gurgaon-2-to-4-years-070718003500?src=seo_srp&sid=15309906715704&xp=1&px=1&qp=teacher&srcPage=s"
 class="content active " style="width: 100%" target="_blank">
 <div style="text-align: center">
@@ -197,69 +227,67 @@ Salary:  3,00,000-5,00,000 P.A
 
 <br>
 <div  class=" row border p-0 m-3 asdf" style="width:38rem;">
-        <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="https://www.naukri.com/job-listings-Walk-in-Interviews-for-PTI-Teacher-in-Alpine-Convent-School-Alpine-Progressive-Educational-Society-AlpineConvent-School-Gurgaon-2-to-4-years-070718003500?src=seo_srp&sid=15309906715704&xp=1&px=1&qp=teacher&srcPage=s"
-        class="content active " style="width: 100%" target="_blank">
+        <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="description 2/index.html"      class="content active " style="width: 100%" target="_blank">
         <div style="text-align: center">
-            Walk in Interviews for PTI 
-            <b>Teachers</b>
-            in Alpine Convent School
+            Primary
+            <b>School Teacher</b>
+            in KP EDUCATIONAL ACADEMY
         </div>
         <span class="bk-warning rupees" >
             <!-- <em></em>  -->
             </span>
             
             <span class="pl-5 text-dark" >
-        Salary:  3,00,000-5,00,000 P.A
+        Salary:  Not disclosed
         </span>
-        <span class="pl-5 text-dark">Work-Experience: 0-2 yrs</span>
+        <span class="pl-5 text-dark">Work-Experience: 1-6 yrs</span>
         <div class="more text-dark">
             <span class='mb-0' style="display: flex; ">
             <div>Keyskills:</div>
-            <div class="pl-5 text-dark">taekwondo, volleyball, football, skating, PTI, Physical Training Instructor,Basketball...</div>
+            <div class="pl-5 text-dark">Primary Teacher,Pre Primary Teacher,montessori,nursery teachers,nursery...</div>
             </span>
             
             <span class='mb-2' style="display:flex; ">
             <div>&nbsp;&nbsp;Job: description</div>
-            <div class="pl-4 text-dark"> Kindly share your updated resume on hr@alpineconventschool.com with passport size photograph. ...</div>
+            <div class="pl-4 text-dark"> We are Hiring primary School Teachers requirement in Acroos Hyderabad .
+                Subjects to be known are .....</div>
             </span>
         </div>
         </a>
         <span class="other-details p-2" style="width: 100%">
             Current-Status:Available
-        <span style="float: right ;">Posted by</span>
+        <span style="float: right ;">Posted by:P Kiran Kumar</span>
         </span>
 </div>
 <div  class=" row border  p-0 m-3 asdf" style="width:38rem;">
-                <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="https://www.naukri.com/job-listings-Walk-in-Interviews-for-PTI-Teacher-in-Alpine-Convent-School-Alpine-Progressive-Educational-Society-AlpineConvent-School-Gurgaon-2-to-4-years-070718003500?src=seo_srp&sid=15309906715704&xp=1&px=1&qp=teacher&srcPage=s"
+                <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="/description 3/index.html"
                 class="content active " style="width: 100%" target="_blank">
                 <div style="text-align: center">
-                    Walk in Interviews for PTI 
-                    <b>Teachers</b>
-                    in Alpine Convent School
+                        <b>Teachers</b> (All Subjects) for Reputed <b>Schools</b> | Dharmapuri, Salem
                 </div>
                 <span class="bk-warning rupees" >
                     <!-- <em></em>  -->
                     </span>
                     
                     <span class="pl-5 text-dark" >
-                Salary:  3,00,000-5,00,000 P.A
+                Salary:  1,00,000 - 6,00,000 P.A. Food & Acc...
                 </span>
-                <span class="pl-5 text-dark">Work-Experience: 0-2 yrs</span>
+                <span class="pl-5 text-dark">Work-Experience: 0-5 yrs</span>
                 <div class="more text-dark">
                     <span class='mb-0' style="display: flex; ">
                     <div>Keyskills:</div>
-                    <div class="pl-5 text-dark">taekwondo, volleyball, football, skating, PTI, Physical Training Instructor,Basketball...</div>
-                    </span>
+                    <div class="pl-5 text-dark">TGT Teacher, PGT Teacher, English Teaching, Physics Chemistry, Social Studies, Hindi ,Biology....</div>
+                </span>
                     
                     <span class='mb-2' style="display:flex; ">
                     <div>&nbsp;&nbsp;Job: description</div>
-                    <div class="pl-4 text-dark"> Kindly share your updated resume on hr@alpineconventschool.com with passport size photograph. ...</div>
-                    </span>
+                    <div class="pl-4 text-dark"> Wanted Dynamic Principal (Lady) with more than 7 years in reputed 
+                            school as a principal  with good academic background ..... </div>   </span>
                 </div>
                 </a>
                 <span class="other-details p-2" style="width: 100%">
                     Current-Status:Available
-                <span style="float: right ;">Posted by</span>
+                <span style="float: right ;">Posted by:HR - Priyadharshini</span>
                 </span>
 </div>
 <div  class=" row border  p-0 m-3 asdf" style="width:38rem;">
@@ -296,102 +324,101 @@ Salary:  3,00,000-5,00,000 P.A
                         </span>
 </div>
 <div  class=" row border  p-0 m-3 asdf" style="width:38rem;">
-                                <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="https://www.naukri.com/job-listings-Walk-in-Interviews-for-PTI-Teacher-in-Alpine-Convent-School-Alpine-Progressive-Educational-Society-AlpineConvent-School-Gurgaon-2-to-4-years-070718003500?src=seo_srp&sid=15309906715704&xp=1&px=1&qp=teacher&srcPage=s"
+                                <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="/description 4/index.html"
                                 class="content active " style="width: 100%" target="_blank">
                                 <div style="text-align: center">
-                                    Walk in Interviews for PTI 
-                                    <b>Teachers</b>
-                                    in Alpine Convent School
+                                        Hiring PGT <b>Teachers</b> for Renowned <b>CBSE</b> School II Lakhimpur (u.p)
                                 </div>
                                 <span class="bk-warning rupees" >
                                     <!-- <em></em>  -->
                                     </span>
                                     
                                     <span class="pl-5 text-dark" >
-                                Salary:  3,00,000-5,00,000 P.A
+                                Salary:   INR 1,25,000 - 5,50,000 P.A.
                                 </span>
-                                <span class="pl-5 text-dark">Work-Experience: 0-2 yrs</span>
+                                <span class="pl-5 text-dark">Work-Experience: 2-7</span>
                                 <div class="more text-dark">
                                     <span class='mb-0' style="display: flex; ">
                                     <div>Keyskills:</div>
-                                    <div class="pl-5 text-dark">taekwondo, volleyball, football, skating, PTI, Physical Training Instructor,Basketball...</div>
+                                    <div class="pl-5 text-dark">Teaching,School,PGT,Cbse,Education,Maths,Bed,Physics,Institute,Chemistry...</div>
                                     </span>
                                     
                                     <span class='mb-2' style="display:flex; ">
                                     <div>&nbsp;&nbsp;Job: description</div>
-                                    <div class="pl-4 text-dark"> Kindly share your updated resume on hr@alpineconventschool.com with passport size photograph. ...</div>
+                                    <div class="pl-4 text-dark">About the school : An academic institute should stand for dreams, building of character & skills, and defining a persons life.
+                                         ...</div>
                                     </span>
                                 </div>
                                 </a>
                                 <span class="other-details p-2" style="width: 100%">
                                     Current-Status:Available
-                                <span style="float: right ;">Posted by</span>
+                                <span style="float: right ;">Posted by:Amit Gupta</span>
                                 </span>
 </div>
 <div  class=" row border container p-0 m-3 asdf" style="width:38rem;">
-                                        <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="https://www.naukri.com/job-listings-Walk-in-Interviews-for-PTI-Teacher-in-Alpine-Convent-School-Alpine-Progressive-Educational-Society-AlpineConvent-School-Gurgaon-2-to-4-years-070718003500?src=seo_srp&sid=15309906715704&xp=1&px=1&qp=teacher&srcPage=s"
+                                        <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="/description 5/index.html"
                                         class="content active " style="width: 100%" target="_blank">
                                         <div style="text-align: center">
-                                            Walk in Interviews for PTI 
-                                            <b>Teachers</b>
-                                            in Alpine Convent School
+                                                Hiring <b>Teachers</b> II Reputed CBSE <b>School</b> II Greater Noida
                                         </div>
                                         <span class="bk-warning rupees" >
                                             <!-- <em></em>  -->
                                             </span>
                                             
                                             <span class="pl-5 text-dark" >
-                                        Salary:  3,00,000-5,00,000 P.A
+                                        Salary:  Not Disclosed
                                         </span>
-                                        <span class="pl-5 text-dark">Work-Experience: 0-2 yrs</span>
+                                        <span class="pl-5 text-dark">Work-Experience: 2-7 yrs</span>
                                         <div class="more text-dark">
                                             <span class='mb-0' style="display: flex; ">
                                             <div>Keyskills:</div>
-                                            <div class="pl-5 text-dark">taekwondo, volleyball, football, skating, PTI, Physical Training Instructor,Basketball...</div>
+                                            <div class="pl-5 text-dark">pgt history ,pgt political science, post graduate history teacher post...</div>
                                             </span>
                                             
                                             <span class='mb-2' style="display:flex; ">
                                             <div>&nbsp;&nbsp;Job: description</div>
-                                            <div class="pl-4 text-dark"> Kindly share your updated resume on hr@alpineconventschool.com with passport size photograph. ...</div>
+                                            <div class="pl-4 text-dark"> One of the renowned school in Pari Chowk, Greater Noida.
+
+                                                    Open Positions: 
+                                                    PGT Political SCie ...</div>
                                             </span>
                                         </div>
                                         </a>
                                         <span class="other-details p-2" style="width: 100%">
                                             Current-Status:Available
-                                        <span style="float: right ;">Posted by</span>
+                                        <span style="float: right ;">Posted by:Sonal</span>
                                         </span>
 </div>                                                                                           
 <div  class=" row border container p-0 m-3 asdf" style="width:38rem;">
-                                                <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="https://www.naukri.com/job-listings-Walk-in-Interviews-for-PTI-Teacher-in-Alpine-Convent-School-Alpine-Progressive-Educational-Society-AlpineConvent-School-Gurgaon-2-to-4-years-070718003500?src=seo_srp&sid=15309906715704&xp=1&px=1&qp=teacher&srcPage=s"
+                                                <a title=" Urgent Requirement For School Teacher All Subject,Delhi NCR" class=" anchor1 link p-1"  href="/description 6/index.html"
                                                 class="content active " style="width: 100%" target="_blank">
                                                 <div style="text-align: center">
-                                                    Walk in Interviews for PTI 
-                                                    <b>Teachers</b>
-                                                    in Alpine Convent School
+                                                        Urgent Requirement For <b>School Teacher</b> All Subject,Delhi NCR
                                                 </div>
                                                 <span class="bk-warning rupees" >
                                                     <!-- <em></em>  -->
                                                     </span>
                                                     
                                                     <span class="pl-5 text-dark" >
-                                                Salary:  3,00,000-5,00,000 P.A
+                                                Salary:  1,50,000-3,00,000 P.A
                                                 </span>
-                                                <span class="pl-5 text-dark">Work-Experience: 0-2 yrs</span>
+                                                <span class="pl-5 text-dark">Work-Experience: 0-3 yrs</span>
                                                 <div class="more text-dark">
                                                     <span class='mb-0' style="display: flex; ">
                                                     <div>Keyskills:</div>
-                                                    <div class="pl-5 text-dark">taekwondo, volleyball, football, skating, PTI, Physical Training Instructor,Basketball...</div>
+                                                    <div class="pl-5 text-dark">Science teaching,Education...</div>
                                                     </span>
                                                     
                                                     <span class='mb-2' style="display:flex; ">
                                                     <div>&nbsp;&nbsp;Job: description</div>
-                                                    <div class="pl-4 text-dark"> Kindly share your updated resume on hr@alpineconventschool.com with passport size photograph. ...</div>
+                                                    <div class="pl-4 text-dark"> To teach and educate students according to guidelines provided by the National
+                                                            Curriculum Framew ...</div>
                                                     </span>
                                                 </div>
                                                 </a>
                                                 <span class="other-details p-2" style="width: 100%">
                                                     Current-Status:Available
-                                                <span style="float: right ;">Posted by</span>
+                                                <span style="float: right ;">Posted by:Narendra Malik </span>
                                                 </span>
 </div>
 <div  class=" row border container p-0 m-3 asdf" style="width:38rem;">
@@ -460,19 +487,95 @@ Salary:  3,00,000-5,00,000 P.A
                                                                 <span style="float: right ;">Posted by</span>
                                                                 </span>
 </div>
-</div>                                                                                     
-<nav   aria-label="Page navigation example pagination-centerd">
-        <ul class="pagination">
-          <li class="page-item page-link  btn"><a class=" border-0 col-1" href="#">Previous</a></li>
-          <div class="page-numbers">
-          <li class="page-item"><a class="btn border-0  " href="#">1</a></li>
-          <li class="page-item"><a class="btn border-0" href="#">2</a></li>
-          <li class="page-item"><a class="btn  border-0" href="#">3</a></li>
-          </div>
-          <li class="page-item btn page-link"><a class=" border-0 col-1" href="#">Next</a></li>
-        </ul>
-      </nav>
-      
+</div> 
+<div class="filter border-secondary border bg-light"  >
+
+
+    <span class="ml-2 mr-2 pl-3 pr-3 "style="border-bottom:2px solid gray;width:100%;padding-bottom:20px;">
+        <img class=" mr-2 mb-2 "src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIcRmu6Md-YfAATIVIT9shv6__28-G86toFGRSq0PYTVT35Zn1" width="40" height="40"  >
+<b class="active ml-2  pb-1  " style="font-size: 23px;">filter</b>
+</span><br><br>
+<div style="border-top:white 15px solid;padding:10px;border-bottom:white 15px solid">
+    Refine results<br><br>Freshness<br>
+    <select>
+        <option value="">Last 30 days</option>
+        <option>Last 15 days</option>
+        <option>Last 7 days</option>
+        <option>Last 3 days</option>
+        <option>Last 1 days</option>
+    </select>
+</div>
+<div style="width:100%;" id="location" class="mr-0  filter-on-click"><a class='btn-light btn ' style="width:100%;text-align: left;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
+    Location</a>
+<div id="location-inside">
+    
+<input type="checkbox">Delhi<br>
+<input type="checkbox">Delhi NCR<br>
+<input type="checkbox">Gurgaon<br>
+<input type="checkbox">Bengaluru<br>
+<input type="checkbox">Other Locations
+</div>
+</div>
+<div style="width:100%;" id="topschools" class="mr-0 filter-on-click"><a class='btn-light btn' style="width:100%;text-align: left;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
+Top Schools</a>
+    <div id="topschools-inside">
+
+    </div>
+</div>
+<div style="width:100%;" id="salary" class="mr-0 filter-on-click"><a class='btn-light btn' style="width:100%;text-align: left;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
+Salary</a>
+
+<div id="salary-inside">
+<input type="checkbox">0-3 Lakhs<br>
+<input type="checkbox">3-6 Lakhs<br>
+<input type="checkbox">6-10 Lakhs<br>
+<input type="checkbox">10-15 Lakhs<br>
+<input type="checkbox">15-25 Lakhs<br>
+</div>
+</div>
+<div style="width:100%;" id="education" class="mr-0 filter-on-click"><a class='btn-light btn' style="width:100%;text-align: left;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
+Education</a>
+<div  id="education-inside">
+        <input type="checkbox">Any Graduate<br>
+        <input type="checkbox">B.Ed<br>
+        <input type="checkbox">B.A<br>
+        <input type="checkbox">M.Com<br>
+        <input type="checkbox">Any Postgraduate<br>
+        </div>
+</div>
+<div style="width:100%;" id="jobtype" class="mr-0 filter-on-click"><a class='btn-light btn' style="width:100%;text-align: left;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
+Job Type</a>
+<div  id="jobtype-inside">
+        <input type="checkbox">All Jobs<br>
+        <input type="checkbox">PSU/Government<br>
+        <input type="checkbox">Walk-in<br>
+        </div>
+</div>
+</div>            
+</span> 
+
+
+
+
+      <div>
+          <table class="page-table" role="presentation">
+<tbody>
+    <tr >
+            <td><a class="btn btn-success mr-5"href='#'>Previous</a></td>
+        <td><a class="btn btn-success"href='#'>1</a></td>
+        <td><a class="btn btn-success" href='#'>2</a></td>
+        <td><a class="btn btn-success" href='#'>3</a></td>
+        <td><a class="btn btn-success ml-5"href='#'>Next</a></td>
+    </tr>
+</tbody>
+          </table>
+      </div>
+
 <footer class="bg-dark container-fluid pl-5">
 <div class="row ">
   <div class="column col-4 ">
