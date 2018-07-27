@@ -36,4 +36,12 @@ $(()=>{
     $('#jobtype-inside').toggle();
   })
 
+function drawcards(data){
+    
+}
+
+  $.get('/api', function (data) {
+    drawcards(data)
+})
+
 })
